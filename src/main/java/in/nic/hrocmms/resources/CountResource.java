@@ -24,7 +24,7 @@ public class CountResource {
 
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Count> getCount(
             @QueryParam("fromDate") String fromDate,
             @QueryParam("toDate") String toDate

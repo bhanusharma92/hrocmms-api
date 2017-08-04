@@ -17,7 +17,7 @@ public class CtoResource {
     private CtoService ctoService = new CtoService();
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Cto> getData(
             @QueryParam("fromDate") String fromDate,
             @QueryParam("toDate") String toDate,

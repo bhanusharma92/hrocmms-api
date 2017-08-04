@@ -17,7 +17,7 @@ public class BmwResource {
     private BmwService bmwService = new BmwService();
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Bmw> getData(
             @QueryParam("fromDate") String fromDate,
             @QueryParam("toDate") String toDate,

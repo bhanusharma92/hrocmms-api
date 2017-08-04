@@ -18,7 +18,7 @@ public class HwmResource {
     private HwmService hwmService = new HwmService();
 
     @GET
-    @Produces(MediaType.APPLICATION_XML)
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Hwm> getData(
             @QueryParam("fromDate") String fromDate,
             @QueryParam("toDate") String toDate,
