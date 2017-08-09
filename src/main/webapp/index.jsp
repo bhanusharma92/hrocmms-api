@@ -26,7 +26,86 @@
         hrocmms API documentation
     </h1>
 
-    <!-- ----------------------------------------------- Count ------------------------------------------------->
+    <!------------------------------------------------ Inspection --------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Inspection</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                POST
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return inspection details
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/inspection">webapi/inspection</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Optional URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <%--<td>Example</td>--%>
+                    </tr>
+                    <tr>
+                        <td>fromDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter inspection based on fromDate and toDate</td>
+                        <%--<td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-31">
+                            webapi/inspection?fromDate=2017-01-01&toDate=2017-08-01
+                        </a>
+                        </td>--%>
+                    </tr>
+                    <tr>
+                        <td>toDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter count based on fromDate and toDate</td>
+                        <%--<td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-31">
+                            webapi/inspection?fromDate=2017-01-01&toDate=2017-08-01
+                        </a>
+                        </td>--%>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Accepts
+            </div>
+            <div class="col-md-10">
+                x-www-form-urlencoded
+            </div>
+        </div>
+        <br>
+    </div>
+    <!------------------------------------------------ Inspection ends------------------------------------------>
+
+    <!-- ---------------------------------------------- Count ------------------------------------------------->
     <div class="row">
         <div class="row">
             <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
