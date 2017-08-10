@@ -145,6 +145,46 @@
     </div>
     <!------------------------------------------------ Officer ends ------------------------------------------>
 
+    <!------------------------------------------------ Industry --------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Industry</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                POST
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return industry details
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/industry">webapi/industry</a>
+            </div>
+        </div>
+        <br>
+
+
+        <br>
+    </div>
+    <!------------------------------------------------ Industry ends ------------------------------------------>
+
     <!-- ---------------------------------------------- Count ------------------------------------------------->
     <div class="row">
         <div class="row">
