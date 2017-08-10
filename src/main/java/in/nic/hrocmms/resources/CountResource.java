@@ -42,10 +42,24 @@ public class CountResource {
             return countService.getAllCount();
         }
 
-
-
     }
 
 
+    @Path("cto")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Count> getCountCto(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
 
+    ){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+
+        if(isValidDateSupplied){
+            return countService.getAllCountDate(fromDate, toDate);
+        }else{
+            return countService.getAllCount();
+        }
+
+    }
 }
