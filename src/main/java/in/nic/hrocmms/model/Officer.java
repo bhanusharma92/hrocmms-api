@@ -1,11 +1,11 @@
 package in.nic.hrocmms.model;
 
 public class Officer {
-    String officerId;
-    String officerName;
-    String officerEmail;
-    String officerMobile;
-    String officerDesignation;
+    private String officerId;
+    private String officerName;
+    private String officerEmail;
+    private String officerMobile;
+    private String officerDesignation;
 
     public Officer() {
         this.officerId = "";
