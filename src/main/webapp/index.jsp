@@ -105,6 +105,46 @@
     </div>
     <!------------------------------------------------ Inspection ends------------------------------------------>
 
+    <!------------------------------------------------ Officer --------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Officer</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                POST
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return active officers details
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/officer">webapi/officer</a>
+            </div>
+        </div>
+        <br>
+
+
+        <br>
+    </div>
+    <!------------------------------------------------ Officer ends ------------------------------------------>
+
     <!-- ---------------------------------------------- Count ------------------------------------------------->
     <div class="row">
         <div class="row">
