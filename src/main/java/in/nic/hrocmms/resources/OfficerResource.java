@@ -2,9 +2,7 @@ package in.nic.hrocmms.resources;
 import in.nic.hrocmms.model.Officer;
 import in.nic.hrocmms.service.OfficerService;
 
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -14,8 +12,13 @@ public class OfficerResource {
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Officer> getData(){
-        return officerService.getAllData();
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public List<Officer> getData(@FormParam("loginId") String userId){
+        if(userId != null && !userId.isEmpty()){
+            return officerService.getDataByUserId(userId);
+        }else {
+            return officerService.getAllData();
+        }
     }
 
 }
