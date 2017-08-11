@@ -3,10 +3,9 @@ package in.nic.hrocmms.resources;
 import in.nic.hrocmms.model.Industry;
 import in.nic.hrocmms.model.Officer;
 import in.nic.hrocmms.service.IndustryService;
+import in.nic.hrocmms.service.UtilityService;
 
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
@@ -17,7 +16,14 @@ public class IndustryResource {
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Industry> getData(){
-        return industryService.getAllData();
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public List<Industry> getData(@FormParam("loginId") String userId){
+        if(userId != null && !userId.isEmpty()){
+            return industryService.getDataByUserId(userId);
+        }else {
+            return industryService.getAllData();
+        }
+
     }
+
 }
