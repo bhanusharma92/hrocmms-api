@@ -89,7 +89,10 @@ public class InspectionService {
             PreparedStatement inspectionPs = con.prepareStatement(
                     "SELECT iu.id, " +
                         "CASE WHEN CAST(rir.month AS INTEGER) < 10 THEN " +
-                        "concat_ws('-','0'||cast(rir.month AS VARCHAR),rir.year)" +
+                        "concat_ws('-','0'||cast(rir.month AS VARCHAR), " +
+                        "CASE WHEN CAST(rir.year AS INTEGER) < 100 THEN " +
+                        "CAST('20' || rir.year AS VARCHAR) ELSE " +
+                        "CAST (rir.year AS VARCHAR) END) " +
                         "ELSE concat_ws('-', rir.month, rir.year) END, " +
                         "up.id, concat_ws(' ', up.employee_first_name, up.employee_last_name), " +
                         "up.mobile, up.email, up.designation " +
@@ -97,11 +100,17 @@ public class InspectionService {
                         "LEFT JOIN ind_application_details AS iad ON iad.id = rir.application_id " +
                         "LEFT JOIN ind_user AS iu ON iad.ind_user_universal_id = iu.industry_reg_master_id " +
                         "LEFT JOIN user_profile AS up ON up.id = rir.officer_id " +
-                        "WHERE format('%s-%s-%s', rir.year, " +
+                        "WHERE format('%s-%s-%s', " +
+                        "CASE WHEN CAST(rir.year AS INTEGER) < 100 THEN  " +
+                        "CAST(CAST('20' || rir.year AS VARCHAR) AS INTEGER) ELSE " +
+                        "CAST (rir.year AS INTEGER) END, " +
                         "CASE WHEN CAST(rir.month AS INTEGER) < 10 THEN " +
                         "CAST('0'||cast(rir.month AS VARCHAR) AS INTEGER)" +
                         "ELSE CAST(rir.month AS INTEGER) END, " +
-                        " 15)::date >= ? AND format('%s-%s-%s', rir.year, " +
+                        " 15)::date >= ? AND format('%s-%s-%s', " +
+                        "CASE WHEN CAST(rir.year AS INTEGER) < 100 THEN  " +
+                        "CAST(CAST('20' || rir.year AS VARCHAR) AS INTEGER) ELSE " +
+                        "CAST (rir.year AS INTEGER) END, " +
                         "CASE WHEN CAST(rir.month AS INTEGER) < 10 THEN " +
                         "CAST('0'||cast(rir.month AS VARCHAR) AS INTEGER)" +
                         "ELSE CAST(rir.month AS INTEGER) END, " +

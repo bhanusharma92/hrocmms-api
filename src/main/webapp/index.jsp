@@ -218,6 +218,30 @@
                 <a href="webapi/count">webapi/count</a>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for cto count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/cto">webapi/count/cto</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for hwm count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/hwm">webapi/count/hwm</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for bmw count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/hwm">webapi/count/bmw</a>
+            </div>
+        </div>
         <br>
         <div class="row">
             <div class="col-md-2" style="background-color: gainsboro">
@@ -234,18 +258,18 @@
                     <tr>
                         <td>fromDate</td>
                         <td>yyyy-mm-dd</td>
-                        <td>used to filter count based on fromDate and toDate</td>
-                        <td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-01">
-                            webapi/count?fromDate=2017-01-01&toDate=2017-08-01
+                        <td>used to filter cto count based on fromDate and toDate</td>
+                        <td><a href="webapi/count/cto?fromDate=2017-01-01&toDate=2017-08-01">
+                            webapi/count/cto?fromDate=2017-01-01&toDate=2017-08-01
                         </a>
                         </td>
                     </tr>
                     <tr>
                         <td>toDate</td>
                         <td>yyyy-mm-dd</td>
-                        <td>used to filter count based on fromDate and toDate</td>
-                        <td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-01">
-                            webapi/count?fromDate=2017-01-01&toDate=2017-08-01
+                        <td>used to filter hwm count based on fromDate and toDate</td>
+                        <td><a href="webapi/count/hwm?fromDate=2017-01-01&toDate=2017-08-01">
+                            webapi/count/hwm?fromDate=2017-01-01&toDate=2017-08-01
                         </a>
                         </td>
                     </tr>
