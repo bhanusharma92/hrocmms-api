@@ -63,6 +63,9 @@ public class InspectionService {
     }
 
     public List<Inspection> getFilteredData(String fromDateStr, String toDateStr){
+        System.out.println("getFilteredData of Inspection resource called");
+        System.out.println("fromDateStr: " + fromDateStr);
+        System.out.println("toDateStr: " + toDateStr);
         List<Inspection> inspectionList = new ArrayList<>();
         con = ConnectionManager.getConnection();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -80,6 +83,8 @@ public class InspectionService {
             e.printStackTrace();
             return new ArrayList<>();
         }
+        System.out.println("fromDate: " + fromDate);
+        System.out.println("toDate: " + toDate);
         try{
             PreparedStatement inspectionPs = con.prepareStatement(
                     "SELECT iu.id, " +
@@ -104,7 +109,9 @@ public class InspectionService {
             );
             inspectionPs.setTimestamp(1, new java.sql.Timestamp(fromDate.getTime()));
             inspectionPs.setTimestamp(2, new java.sql.Timestamp(toDate.getTime()));
+            System.out.println("inspectionPs: " + inspectionPs);
             ResultSet inspectionRs = inspectionPs.executeQuery();
+            System.out.println("inspectionRs: " + inspectionRs);
             while (inspectionRs.next()) {
                 inspection = new Inspection(
                         inspectionRs.getString(1),
@@ -115,6 +122,14 @@ public class InspectionService {
                         inspectionRs.getString(6),
                         inspectionRs.getString(7)
                 );
+                System.out.println("inspection : " + inspection);
+                System.out.println("inspection.factoryUniqueId : " + inspection.getFactoryUniqueId());
+                System.out.println("inspection.inspectionDate : " + inspection.getInspectionDate());
+                System.out.println("inspection.officerName : " + inspection.getOfficerName());
+                System.out.println("inspection.officerId : " + inspection.getOfficerId());
+                System.out.println("inspection.officerMobile : " + inspection.getOfficerMobile());
+                System.out.println("inspection.officerEmail : " + inspection.getOfficerMobile());
+                System.out.println("inspection.officerDesignation : " + inspection.getOfficerDesignation());
                 inspectionList.add(inspection);
             }
 
