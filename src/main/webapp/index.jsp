@@ -106,7 +106,7 @@
     <!------------------------------------------------ Inspection ends------------------------------------------>
 
     <!------------------------------------------------ Officer --------------------------------------------->
-    <div class="row">
+   <%-- <div class="row">
         <div class="row">
             <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
                 <h3>Officer</h3>
@@ -139,14 +139,48 @@
             </div>
         </div>
         <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Optional URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>loginId</td>
+                        <td></td>
+                        <td>get data of particular officer</td>
+                        <td><a href="webapi/officer">
+                            webapi/officer
+                        </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Accepts
+            </div>
+            <div class="col-md-10">
+                x-www-form-urlencoded
+            </div>
+        </div>
 
 
         <br>
-    </div>
+    </div>--%>
     <!------------------------------------------------ Officer ends ------------------------------------------>
 
     <!------------------------------------------------ Industry --------------------------------------------->
-    <div class="row">
+    <%--<div class="row">
         <div class="row">
             <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
                 <h3>Industry</h3>
@@ -180,9 +214,42 @@
         </div>
         <br>
 
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Optional URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>loginId</td>
+                        <td></td>
+                        <td>get data of particular industry</td>
+                        <td><a href="webapi/industry">
+                            webapi/industry
+                        </a>
+                        </td>
+                    </tr>
 
-        <br>
-    </div>
+                </table>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Accepts
+            </div>
+            <div class="col-md-10">
+                x-www-form-urlencoded
+            </div>
+        </div>
+
+    </div>--%>
     <!------------------------------------------------ Industry ends ------------------------------------------>
 
     <!-- ---------------------------------------------- Count ------------------------------------------------->

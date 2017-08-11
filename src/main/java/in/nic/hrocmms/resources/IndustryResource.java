@@ -9,7 +9,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("industry")
+/*@Path("industry")
 public class IndustryResource {
 
     private IndustryService industryService = new IndustryService();
@@ -26,4 +26,4 @@ public class IndustryResource {
 
     }
 
-}
+}*/

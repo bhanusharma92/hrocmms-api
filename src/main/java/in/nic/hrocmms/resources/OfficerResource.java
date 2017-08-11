@@ -6,7 +6,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("officer")
+/*@Path("officer")
 public class OfficerResource {
     private OfficerService officerService = new OfficerService();
 
@@ -21,4 +21,4 @@ public class OfficerResource {
         }
     }
 
-}
+}*/
