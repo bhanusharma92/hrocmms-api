@@ -17,8 +17,6 @@ public class ConnectionManager {
                         "postgres","1234");
                 /*con = DriverManager.getConnection("jdbc:postgresql://10.248.110.101:5432/OCMMS-HAR",
                         "postgres","nic");*/
-                System.out.println("Inside ConnectionManager");
-                System.out.println("con: " + con);
             } catch (SQLException ex) {
                 // log an exception. fro example:
                 System.out.println("ex: " + ex);

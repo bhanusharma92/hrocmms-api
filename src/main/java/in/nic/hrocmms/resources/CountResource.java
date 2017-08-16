@@ -55,9 +55,8 @@ public class CountResource {
             @QueryParam("toDate") String toDate
 
     ){
-        System.out.println("CountSingleModule getCountCto called");
+
         boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
-        System.out.println("isValidDateSupplied: " + isValidDateSupplied);
         if(isValidDateSupplied){
             return countSingleModuleService.getAllCountDate("cto", fromDate, toDate);
         }else{

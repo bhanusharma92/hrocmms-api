@@ -11,6 +11,7 @@ public class Inspection {
     private String officerMobile;
     private String officerEmail;
     private String officerDesignation;
+    private String loginId;
 
     public Inspection() {
         this.factoryUniqueId = "";
@@ -21,10 +22,11 @@ public class Inspection {
         this.officerEmail = "";
         this.officerEmail = "";
         this.officerDesignation = "";
+        this.loginId = "";
     }
 
     public Inspection(String factoryUniqueId, String inspectionDate, String officerId, String officerName,
-                      String officerMobile, String officerEmail, String officerDesignation) {
+                      String officerMobile, String officerEmail, String officerDesignation, String loginId) {
         this.factoryUniqueId = factoryUniqueId;
         this.inspectionDate = inspectionDate;
         this.officerId = officerId;
@@ -32,6 +34,7 @@ public class Inspection {
         this.officerMobile = officerMobile;
         this.officerEmail = officerEmail;
         this.officerDesignation = officerDesignation;
+        this.loginId = loginId;
     }
 
     public String getFactoryUniqueId() {
@@ -88,5 +91,13 @@ public class Inspection {
 
     public void setOfficerDesignation(String officerDesignation) {
         this.officerDesignation = officerDesignation;
+    }
+
+    public String getLoginId() {
+        return loginId;
+    }
+
+    public void setLoginId(String loginId) {
+        this.loginId = loginId;
     }
 }
