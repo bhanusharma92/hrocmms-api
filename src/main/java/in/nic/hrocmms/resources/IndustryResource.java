@@ -14,10 +14,9 @@ public class IndustryResource {
 
     private IndustryService industryService = new IndustryService();
 
-    @POST
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public List<Industry> getData(@FormParam("loginId") String userId){
+    public List<Industry> getData(@QueryParam("loginId") String userId){
         if(userId != null && !userId.isEmpty()){
             return industryService.getDataByUserId(userId);
         }else {

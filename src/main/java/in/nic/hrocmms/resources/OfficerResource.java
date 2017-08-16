@@ -10,10 +10,9 @@ import java.util.List;
 public class OfficerResource {
     private OfficerService officerService = new OfficerService();
 
-    @POST
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public List<Officer> getData(@FormParam("loginId") String userId){
+    public List<Officer> getData(@QueryParam("loginId") String userId){
         if(userId != null && !userId.isEmpty()){
             return officerService.getDataByUserId(userId);
         }else {

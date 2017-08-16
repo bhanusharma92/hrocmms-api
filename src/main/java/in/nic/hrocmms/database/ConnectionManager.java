@@ -13,10 +13,10 @@ public class ConnectionManager {
         try {
             Class.forName(driverName);
             try {
-                /*con = DriverManager.getConnection( "jdbc:postgresql://localhost:5432/haryana_db",
-                        "postgres","1234");*/
-                con = DriverManager.getConnection("jdbc:postgresql://10.248.110.101:5432/OCMMS-HAR",
-                        "postgres","nic");
+                con = DriverManager.getConnection( "jdbc:postgresql://localhost:5432/haryana_db",
+                        "postgres","1234");
+                /*con = DriverManager.getConnection("jdbc:postgresql://10.248.110.101:5432/OCMMS-HAR",
+                        "postgres","nic");*/
                 System.out.println("Inside ConnectionManager");
                 System.out.println("con: " + con);
             } catch (SQLException ex) {
