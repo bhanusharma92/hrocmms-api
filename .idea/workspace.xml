@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df264b7-c671-4370-a239-7abf9062bb47" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/database/ConnectionManager.java" afterPath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/database/ConnectionManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java" afterPath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/InspectionResource.java" afterPath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/InspectionResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/OfficerResource.java" afterPath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/OfficerResource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java" afterPath="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,11 +77,80 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="IndustryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding>
+                <marker date="1502863289547" expanded="true" signature="732:3299" ph="SELECT iu.id... ind_user" />
+                <marker date="1502863289547" expanded="true" signature="2159:2415" ph="SELECT iad2.... ind_application_details" />
+                <marker date="1502863289547" expanded="true" signature="2633:2852" ph="select rc2.i... record_certificate" />
+                <marker date="1502863289547" expanded="true" signature="5211:7778" ph="SELECT iu.id... ind_user" />
+                <marker date="1502863289547" expanded="true" signature="5211:7861" ph="SELECT iu.id... ind_user" />
+                <marker date="1502863289547" expanded="true" signature="6638:6894" ph="SELECT iad2.... ind_application_details" />
+                <marker date="1502863289547" expanded="true" signature="7112:7331" ph="select rc2.i... record_certificate" />
+                <marker date="1502863289547" expanded="true" signature="9589:12304" ph="SELECT iu.id... ind_user" />
+                <marker date="1502863289547" expanded="true" signature="9589:12353" ph="SELECT iu.id... ind_user" />
+                <marker date="1502863289547" expanded="true" signature="11096:11364" ph="SELECT iad2.... ind_application_details" />
+                <marker date="1502863289547" expanded="true" signature="11602:11833" ph="select rc2.i... record_certificate" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2424">
+              <caret line="204" column="32" lean-forward="true" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="32" />
+              <folding>
+                <marker date="1502425707887" expanded="true" signature="1813:2068" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="2149:2403" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="2485:2740" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="2822:3076" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="3157:3403" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="3673:3883" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="5812:6000" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="6082:6269" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="6352:6540" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="6623:6810" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="6892:7087" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="7357:7517" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="9445:9633" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="9715:9902" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="9985:10173" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="10256:10443" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="10525:10720" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="10990:11150" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="15685:16035" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="16306:16654" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="16926:17276" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="17550:17899" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="18172:18513" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="18973:19278" ph="SELECT COUNT... all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="21397:21678" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="21949:22229" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="22501:22782" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="23056:23336" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="23609:23897" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="24357:24610" ph="SELECT COUNT... hwm_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="26728:27009" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="27280:27560" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="27832:28113" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="28387:28667" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="28940:29228" ph="SELECT COUNT... bmw_all_summary_report" />
+                <marker date="1502425707887" expanded="true" signature="29688:29941" ph="SELECT COUNT... bmw_all_summary_report" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="IndustryResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            <state relative-caret-position="349">
+              <caret line="22" column="94" lean-forward="false" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -98,27 +166,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfficerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/OfficerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="58" column="63" lean-forward="false" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1502439327482" expanded="true" signature="619:866" ph="SELECT up.id... user_profile" />
-                <marker date="1502439327482" expanded="true" signature="1948:2207" ph="SELECT up.id... user_profile" />
-                <marker date="1502439327482" expanded="true" signature="1948:2211" ph="SELECT up.id... user_profile" />
-                <marker date="1502439327482" expanded="true" signature="1948:2254" ph="SELECT up.id... user_profile" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InspectionResource.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InspectionResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/InspectionResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+            <state relative-caret-position="349">
+              <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,136 +188,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bmw.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Bmw.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#1034#1035#0" expanded="false" />
-                <element signature="e#1070#1071#0" expanded="false" />
-                <element signature="e#1128#1129#0" expanded="false" />
-                <element signature="e#1178#1179#0" expanded="false" />
-                <element signature="e#1217#1218#0" expanded="false" />
-                <element signature="e#1252#1253#0" expanded="false" />
-                <element signature="e#1308#1309#0" expanded="false" />
-                <element signature="e#1356#1357#0" expanded="false" />
-                <element signature="e#1391#1392#0" expanded="false" />
-                <element signature="e#1422#1423#0" expanded="false" />
-                <element signature="e#1470#1471#0" expanded="false" />
-                <element signature="e#1510#1511#0" expanded="false" />
-                <element signature="e#1548#1549#0" expanded="false" />
-                <element signature="e#1582#1583#0" expanded="false" />
-                <element signature="e#1636#1637#0" expanded="false" />
-                <element signature="e#1682#1683#0" expanded="false" />
-                <element signature="e#1726#1727#0" expanded="false" />
-                <element signature="e#1766#1767#0" expanded="false" />
-                <element signature="e#1832#1833#0" expanded="false" />
-                <element signature="e#1890#1891#0" expanded="false" />
-                <element signature="e#1942#1943#0" expanded="false" />
-                <element signature="e#1990#1991#0" expanded="false" />
-                <element signature="e#2190#2191#0" expanded="false" />
-                <element signature="e#2230#2231#0" expanded="false" />
-                <element signature="e#2296#2297#0" expanded="false" />
-                <element signature="e#2349#2350#0" expanded="false" />
-                <element signature="e#2382#2383#0" expanded="false" />
-                <element signature="e#2411#2412#0" expanded="false" />
-                <element signature="e#2455#2456#0" expanded="false" />
-                <element signature="e#2491#2492#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Count.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Count.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1272">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CountResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/CountResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="23" />
+            <state relative-caret-position="1440">
+              <caret line="76" column="94" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CountSingleModuleService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountSingleModuleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="377" column="93" lean-forward="false" selection-start-line="377" selection-start-column="51" selection-end-line="377" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6024">
-              <caret line="251" column="10" lean-forward="false" selection-start-line="251" selection-start-column="10" selection-end-line="251" selection-end-column="10" />
+            <state relative-caret-position="589">
+              <caret line="248" column="10" lean-forward="true" selection-start-line="248" selection-start-column="10" selection-end-line="248" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Industry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Industry.java">
+      <file leaf-file-name="UtilityService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/UtilityService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-              <folding>
-                <element signature="e#1770#1771#0" expanded="false" />
-                <element signature="e#1808#1809#0" expanded="false" />
-                <element signature="e#1870#1871#0" expanded="false" />
-                <element signature="e#1924#1925#0" expanded="false" />
-                <element signature="e#1968#1969#0" expanded="false" />
-                <element signature="e#2008#2009#0" expanded="false" />
-                <element signature="e#2074#2075#0" expanded="false" />
-                <element signature="e#2132#2133#0" expanded="false" />
-                <element signature="e#2167#2168#0" expanded="false" />
-                <element signature="e#2198#2199#0" expanded="false" />
-                <element signature="e#2246#2247#0" expanded="false" />
-                <element signature="e#2286#2287#0" expanded="false" />
-                <element signature="e#2319#2320#0" expanded="false" />
-                <element signature="e#2348#2349#0" expanded="false" />
-                <element signature="e#2392#2393#0" expanded="false" />
-                <element signature="e#2428#2429#0" expanded="false" />
-                <element signature="e#2462#2463#0" expanded="false" />
-                <element signature="e#2492#2493#0" expanded="false" />
-                <element signature="e#2538#2539#0" expanded="false" />
-                <element signature="e#2576#2577#0" expanded="false" />
-                <element signature="e#2610#2611#0" expanded="false" />
-                <element signature="e#2640#2641#0" expanded="false" />
-                <element signature="e#2686#2687#0" expanded="false" />
-                <element signature="e#2724#2725#0" expanded="false" />
-                <element signature="e#2763#2764#0" expanded="false" />
-                <element signature="e#2798#2799#0" expanded="false" />
-                <element signature="e#2854#2855#0" expanded="false" />
-                <element signature="e#2902#2903#0" expanded="false" />
-                <element signature="e#2935#2936#0" expanded="false" />
-                <element signature="e#2964#2965#0" expanded="false" />
-                <element signature="e#3008#3009#0" expanded="false" />
-                <element signature="e#3044#3045#0" expanded="false" />
-                <element signature="e#3076#3077#0" expanded="false" />
-                <element signature="e#3104#3105#0" expanded="false" />
-                <element signature="e#3146#3147#0" expanded="false" />
-                <element signature="e#3180#3181#0" expanded="false" />
-                <element signature="e#3219#3220#0" expanded="false" />
-                <element signature="e#3254#3255#0" expanded="false" />
-                <element signature="e#3310#3311#0" expanded="false" />
-                <element signature="e#3358#3359#0" expanded="false" />
-                <element signature="e#3401#3402#0" expanded="false" />
-                <element signature="e#3440#3441#0" expanded="false" />
-                <element signature="e#3504#3505#0" expanded="false" />
-                <element signature="e#3560#3561#0" expanded="false" />
-                <element signature="e#3603#3604#0" expanded="false" />
-                <element signature="e#3642#3643#0" expanded="false" />
-                <element signature="e#3706#3707#0" expanded="false" />
-                <element signature="e#3762#3763#0" expanded="false" />
-                <element signature="e#3796#3797#0" expanded="false" />
-                <element signature="e#3826#3827#0" expanded="false" />
-                <element signature="e#3872#3873#0" expanded="false" />
-                <element signature="e#3910#3911#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -288,6 +246,7 @@
       <find>hwm</find>
       <find>countSingleModule</find>
       <find>system</find>
+      <find>Sys</find>
     </findStrings>
     <replaceStrings>
       <replace>basr</replace>
@@ -335,13 +294,13 @@
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountSingleModuleService.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Inspection.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/InspectionService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/OfficerService.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/InspectionResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/OfficerResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/database/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       </list>
     </option>
   </component>
@@ -1144,12 +1103,12 @@
       <workItem from="1502338905791" duration="5897000" />
       <workItem from="1502424655227" duration="17380000" />
       <workItem from="1502684446874" duration="5824000" />
-      <workItem from="1502857064680" duration="1180000" />
+      <workItem from="1502857064680" duration="6115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170406000" />
+    <option name="totallyTimeSpent" value="175341000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1437,6 +1396,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11808">
           <caret line="500" column="63" lean-forward="false" selection-start-line="500" selection-start-column="63" selection-end-line="500" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1501742452320" expanded="true" signature="900:1797" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="3020:4109" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="5152:6240" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="7284:8373" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="9416:10504" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="11547:12644" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="13883:14940" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="17203:18219" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="19648:20856" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="22095:23302" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="24542:25750" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="26989:28196" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="29435:30651" ph="SELECT basr.... bmw_all_summary_report" />
+            <marker date="1501742452320" expanded="true" signature="32086:33262" ph="SELECT basr.... bmw_all_summary_report" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,69 +1465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/UtilityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="70" column="30" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountSingleModuleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4872">
-          <caret line="203" column="47" lean-forward="true" selection-start-line="203" selection-start-column="47" selection-end-line="203" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Inspection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="204" column="32" lean-forward="true" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="32" />
-          <folding>
-            <marker date="1502425707887" expanded="true" signature="1813:2068" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="2149:2403" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="2485:2740" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="2822:3076" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="3157:3403" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="3673:3883" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="5812:6000" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="6082:6269" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="6352:6540" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="6623:6810" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="6892:7087" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="7357:7517" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="9445:9633" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="9715:9902" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="9985:10173" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="10256:10443" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="10525:10720" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="10990:11150" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="15685:16035" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="16306:16654" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="16926:17276" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="17550:17899" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="18172:18513" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="18973:19278" ph="SELECT COUNT... all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="21397:21678" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="21949:22229" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="22501:22782" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="23056:23336" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="23609:23897" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="24357:24610" ph="SELECT COUNT... hwm_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="26728:27009" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="27280:27560" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="27832:28113" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="28387:28667" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="28940:29228" ph="SELECT COUNT... bmw_all_summary_report" />
-            <marker date="1502425707887" expanded="true" signature="29688:29941" ph="SELECT COUNT... bmw_all_summary_report" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,23 +1483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="37" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="146" column="48" lean-forward="false" selection-start-line="146" selection-start-column="48" selection-end-line="146" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1502438214353" expanded="true" signature="627:3342" ph="SELECT iu.id... ind_user" />
-            <marker date="1502438214353" expanded="true" signature="2134:2402" ph="SELECT iad2.... ind_application_details" />
-            <marker date="1502438214353" expanded="true" signature="2640:2871" ph="select rc2.i... record_certificate" />
-            <marker date="1502438214353" expanded="true" signature="4905:7620" ph="SELECT iu.id... ind_user" />
-            <marker date="1502438214353" expanded="true" signature="4905:7669" ph="SELECT iu.id... ind_user" />
-            <marker date="1502438214353" expanded="true" signature="6412:6680" ph="SELECT iad2.... ind_application_details" />
-            <marker date="1502438214353" expanded="true" signature="6918:7149" ph="select rc2.i... record_certificate" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1700,34 +1600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6024">
-          <caret line="251" column="10" lean-forward="false" selection-start-line="251" selection-start-column="10" selection-end-line="251" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/CountResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/model/Count.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1272">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1750,11 +1626,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/InspectionResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="349">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/UtilityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/CountResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="76" column="94" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountSingleModuleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="377" column="93" lean-forward="false" selection-start-line="377" selection-start-column="51" selection-end-line="377" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/CountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2424">
+          <caret line="204" column="32" lean-forward="true" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="32" />
+          <folding>
+            <marker date="1502425707887" expanded="true" signature="1813:2068" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="2149:2403" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="2485:2740" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="2822:3076" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="3157:3403" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="3673:3883" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="5812:6000" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="6082:6269" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="6352:6540" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="6623:6810" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="6892:7087" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="7357:7517" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="9445:9633" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="9715:9902" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="9985:10173" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="10256:10443" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="10525:10720" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="10990:11150" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="15685:16035" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="16306:16654" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="16926:17276" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="17550:17899" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="18172:18513" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="18973:19278" ph="SELECT COUNT... all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="21397:21678" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="21949:22229" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="22501:22782" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="23056:23336" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="23609:23897" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="24357:24610" ph="SELECT COUNT... hwm_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="26728:27009" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="27280:27560" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="27832:28113" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="28387:28667" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="28940:29228" ph="SELECT COUNT... bmw_all_summary_report" />
+            <marker date="1502425707887" expanded="true" signature="29688:29941" ph="SELECT COUNT... bmw_all_summary_report" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/resources/IndustryResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="22" column="94" lean-forward="false" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/in/nic/hrocmms/service/IndustryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding>
+            <marker date="1502863289547" expanded="true" signature="732:3299" ph="SELECT iu.id... ind_user" />
+            <marker date="1502863289547" expanded="true" signature="2159:2415" ph="SELECT iad2.... ind_application_details" />
+            <marker date="1502863289547" expanded="true" signature="2633:2852" ph="select rc2.i... record_certificate" />
+            <marker date="1502863289547" expanded="true" signature="5211:7778" ph="SELECT iu.id... ind_user" />
+            <marker date="1502863289547" expanded="true" signature="5211:7861" ph="SELECT iu.id... ind_user" />
+            <marker date="1502863289547" expanded="true" signature="6638:6894" ph="SELECT iad2.... ind_application_details" />
+            <marker date="1502863289547" expanded="true" signature="7112:7331" ph="select rc2.i... record_certificate" />
+            <marker date="1502863289547" expanded="true" signature="9589:12304" ph="SELECT iu.id... ind_user" />
+            <marker date="1502863289547" expanded="true" signature="9589:12353" ph="SELECT iu.id... ind_user" />
+            <marker date="1502863289547" expanded="true" signature="11096:11364" ph="SELECT iad2.... ind_application_details" />
+            <marker date="1502863289547" expanded="true" signature="11602:11833" ph="select rc2.i... record_certificate" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="248" column="10" lean-forward="true" selection-start-line="248" selection-start-column="10" selection-end-line="248" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

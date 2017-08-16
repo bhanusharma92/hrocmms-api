@@ -16,13 +16,20 @@ public class IndustryResource {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Industry> getData(@QueryParam("loginId") String userId){
-        if(userId != null && !userId.isEmpty()){
+    public List<Industry> getData(
+            @QueryParam("loginId") String userId,
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+        if(isValidDateSupplied){
+            return industryService.getDataByDate(fromDate, toDate);
+        } else if(userId != null && !userId.isEmpty()){
             return industryService.getDataByUserId(userId);
         }else {
             return industryService.getAllData();
         }
 
     }
+
 
 }

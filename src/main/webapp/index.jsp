@@ -38,7 +38,7 @@
                 Method
             </div>
             <div class="col-md-10">
-                POST
+                GET
             </div>
         </div>
         <br>
@@ -93,14 +93,7 @@
                 </table>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2" style="background-color: gainsboro">
-                Accepts
-            </div>
-            <div class="col-md-10">
-                x-www-form-urlencoded
-            </div>
-        </div>
+
         <br>
     </div>
     <!------------------------------------------------ Inspection ends------------------------------------------>
@@ -117,7 +110,7 @@
                 Method
             </div>
             <div class="col-md-10">
-                POST
+                GET
             </div>
         </div>
         <br>
@@ -165,14 +158,7 @@
             </div>
         </div>
         <br />
-        <div class="row">
-            <div class="col-md-2" style="background-color: gainsboro">
-                Accepts
-            </div>
-            <div class="col-md-10">
-                x-www-form-urlencoded
-            </div>
-        </div>
+
 
 
         <br>
@@ -191,7 +177,7 @@
                 Method
             </div>
             <div class="col-md-10">
-                POST
+                GET
             </div>
         </div>
         <br>
@@ -229,9 +215,27 @@
                     <tr>
                         <td>loginId</td>
                         <td></td>
-                        <td>get data of particular industry</td>
-                        <td><a href="webapi/industry">
-                            webapi/industry
+                        <td>used to filter industry based on loginId</td>
+                        <td><a href="webapi/industry?loginId=17PAN4080650">
+                            webapi/industry?loginId=17PAN4080650
+                        </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>fromDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter industry based on registration date</td>
+                        <td><a href="webapi/industry?fromDate=2017-01-01&toDate=2017-12-31">
+                            webapi/industry?fromDate=2017-01-01&toDate=2017-12-31
+                        </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>toDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter industry based on registration date</td>
+                        <td><a href="webapi/industry?fromDate=2017-01-01&toDate=2017-12-31">
+                            webapi/industry?fromDate=2017-01-01&toDate=2017-12-31
                         </a>
                         </td>
                     </tr>
@@ -240,14 +244,7 @@
             </div>
         </div>
         <br />
-        <div class="row">
-            <div class="col-md-2" style="background-color: gainsboro">
-                Accepts
-            </div>
-            <div class="col-md-10">
-                x-www-form-urlencoded
-            </div>
-        </div>
+
 
     </div>
     <!------------------------------------------------ Industry ends ------------------------------------------>
