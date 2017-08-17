@@ -26,12 +26,12 @@ public class InspectionService {
                         "CASE WHEN CAST(rir.month AS INTEGER) < 10 THEN " +
                         "concat_ws('-','0'||cast(rir.month AS VARCHAR),rir.year)" +
                         "ELSE concat_ws('-', rir.month, rir.year) END, " +
-                        "up.id, concat_ws(' ', up.employee_first_name, up.employee_last_name), " +
+                        "up.id, concat_ws(' ', TRIM(up.employee_first_name), TRIM(up.employee_last_name)), " +
                         "up.mobile, up.email, up.designation, iu.id " +
                         "FROM regular_inspection_raised AS rir " +
                         "LEFT JOIN ind_application_details AS iad ON iad.id = rir.application_id " +
                         "LEFT JOIN ind_user AS iu ON iad.ind_user_universal_id = iu.industry_reg_master_id " +
-                        "LEFT JOIN user_profile AS up ON up.id = rir.officer_id"
+                        "LEFT JOIN user_profile AS up ON TRIM(up.id) = TRIM(rir.officer_id)"
             );
             ResultSet inspectionRs = inspectionPs.executeQuery();
             while (inspectionRs.next()) {
@@ -90,12 +90,12 @@ public class InspectionService {
                         "CAST('20' || rir.year AS VARCHAR) ELSE " +
                         "CAST (rir.year AS VARCHAR) END) " +
                         "ELSE concat_ws('-', rir.month, rir.year) END, " +
-                        "up.id, concat_ws(' ', up.employee_first_name, up.employee_last_name), " +
+                        "up.id, concat_ws(' ', TRIM(up.employee_first_name), TRIM(up.employee_last_name)), " +
                         "up.mobile, up.email, up.designation, iu.id " +
                         "FROM regular_inspection_raised AS rir " +
                         "LEFT JOIN ind_application_details AS iad ON iad.id = rir.application_id " +
                         "LEFT JOIN ind_user AS iu ON iad.ind_user_universal_id = iu.industry_reg_master_id " +
-                        "LEFT JOIN user_profile AS up ON up.id = rir.officer_id " +
+                        "LEFT JOIN user_profile AS up ON TRIM(up.id) = TRIM(rir.officer_id) " +
                         "WHERE format('%s-%s-%s', " +
                         "CASE WHEN CAST(rir.year AS INTEGER) < 100 THEN  " +
                         "CAST(CAST('20' || rir.year AS VARCHAR) AS INTEGER) ELSE " +

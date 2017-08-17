@@ -20,7 +20,7 @@ public class OfficerService {
         Officer officer;
         try{
             PreparedStatement officerPs = con.prepareStatement(
-                    "SELECT up.id, concat_ws('',up.employee_first_name,up.employee_last_name), " +
+                    "SELECT up.id, concat_ws(' ',TRIM(up.employee_first_name),TRIM(up.employee_last_name)), " +
                         "up.email, up.mobile, up.designation " +
                         "FROM user_profile AS up " +
                         "WHERE up.status = 'active';"
@@ -57,7 +57,7 @@ public class OfficerService {
         Officer officer;
         try{
             PreparedStatement officerPs = con.prepareStatement(
-                    "SELECT up.id, concat_ws('',up.employee_first_name,up.employee_last_name), " +
+                    "SELECT up.id, concat_ws(' ',TRIM(up.employee_first_name),TRIM(up.employee_last_name)), " +
                             "up.email, up.mobile, up.designation " +
                             "FROM user_profile AS up " +
                             "WHERE up.status = 'active' AND " +
