@@ -100,4 +100,23 @@ public class CountResource {
         }
 
     }
+
+    @Path("all")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<CountSingleModule> getCountAll(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
+
+    ){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+
+        if(isValidDateSupplied){
+            return countSingleModuleService.getAllCountDate("all", fromDate, toDate);
+        }else{
+            return countSingleModuleService.getAllCount("all");
+        }
+
+    }
+
 }

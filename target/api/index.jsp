@@ -292,6 +292,14 @@
         </div>
         <div class="row">
             <div class="col-md-2" style="background-color: gainsboro">
+                Link for all module count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/all">webapi/count/all</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
                 Link for hwm count
             </div>
             <div class="col-md-10">
