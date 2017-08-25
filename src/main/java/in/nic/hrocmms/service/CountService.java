@@ -234,7 +234,6 @@ public class CountService {
         }
 
         con = ConnectionManager.getConnection();
-        System.out.println("con: " + con);
 
         Date today = new Date();
         Calendar cal = new GregorianCalendar();
@@ -483,4 +482,5 @@ public class CountService {
         countList.add(count);
         return countList;
     }
+
 }

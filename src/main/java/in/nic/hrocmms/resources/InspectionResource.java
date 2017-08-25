@@ -12,14 +12,13 @@ import java.util.List;
 public class InspectionResource {
     private InspectionService inspectionService = new InspectionService();
 
-    @POST
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    // @Consumes(MediaType.MULTIPART_FORM_DATA)
     public List<Inspection> getData(
-            @FormParam("fromDate") String fromDate,
-            @FormParam("toDate") String toDate
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
     ){
+
         boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
         if(isValidDateSupplied){
             return inspectionService.getFilteredData(fromDate, toDate);
@@ -27,4 +26,6 @@ public class InspectionResource {
             return inspectionService.getAllData();
         }
     }
+
+
 }

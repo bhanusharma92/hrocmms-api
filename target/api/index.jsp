@@ -38,7 +38,7 @@
                 Method
             </div>
             <div class="col-md-10">
-                POST
+                GET
             </div>
         </div>
         <br>
@@ -93,17 +93,161 @@
                 </table>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-2" style="background-color: gainsboro">
-                Accepts
-            </div>
-            <div class="col-md-10">
-                x-www-form-urlencoded
-            </div>
-        </div>
+
         <br>
     </div>
     <!------------------------------------------------ Inspection ends------------------------------------------>
+
+    <!------------------------------------------------ Officer --------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Officer</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                GET
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return active officers details
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/officer">webapi/officer</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Optional URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>loginId</td>
+                        <td></td>
+                        <td>get data of particular officer</td>
+                        <td><a href="webapi/officer">
+                            webapi/officer
+                        </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <br />
+
+
+
+        <br>
+    </div>
+    <!------------------------------------------------ Officer ends ------------------------------------------>
+
+    <!------------------------------------------------ Industry --------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Industry</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                GET
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return industry details
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/industry">webapi/industry</a>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Optional URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>loginId</td>
+                        <td></td>
+                        <td>used to filter industry based on loginId</td>
+                        <td><a href="webapi/industry?loginId=17PAN4080650">
+                            webapi/industry?loginId=17PAN4080650
+                        </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>fromDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter industry based on registration date</td>
+                        <td><a href="webapi/industry?fromDate=2017-01-01&toDate=2017-12-31">
+                            webapi/industry?fromDate=2017-01-01&toDate=2017-12-31
+                        </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>toDate</td>
+                        <td>yyyy-mm-dd</td>
+                        <td>used to filter industry based on registration date</td>
+                        <td><a href="webapi/industry?fromDate=2017-01-01&toDate=2017-12-31">
+                            webapi/industry?fromDate=2017-01-01&toDate=2017-12-31
+                        </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        <br />
+
+
+    </div>
+    <!------------------------------------------------ Industry ends ------------------------------------------>
 
     <!-- ---------------------------------------------- Count ------------------------------------------------->
     <div class="row">
@@ -138,6 +282,38 @@
                 <a href="webapi/count">webapi/count</a>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for cto count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/cto">webapi/count/cto</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for all module count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/all">webapi/count/all</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for hwm count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/hwm">webapi/count/hwm</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for bmw count
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/count/hwm">webapi/count/bmw</a>
+            </div>
+        </div>
         <br>
         <div class="row">
             <div class="col-md-2" style="background-color: gainsboro">
@@ -154,18 +330,18 @@
                     <tr>
                         <td>fromDate</td>
                         <td>yyyy-mm-dd</td>
-                        <td>used to filter count based on fromDate and toDate</td>
-                        <td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-01">
-                            webapi/count?fromDate=2017-01-01&toDate=2017-08-01
+                        <td>used to filter cto count based on fromDate and toDate</td>
+                        <td><a href="webapi/count/cto?fromDate=2017-01-01&toDate=2017-08-01">
+                            webapi/count/cto?fromDate=2017-01-01&toDate=2017-08-01
                         </a>
                         </td>
                     </tr>
                     <tr>
                         <td>toDate</td>
                         <td>yyyy-mm-dd</td>
-                        <td>used to filter count based on fromDate and toDate</td>
-                        <td><a href="webapi/count?fromDate=2017-01-01&toDate=2017-08-01">
-                            webapi/count?fromDate=2017-01-01&toDate=2017-08-01
+                        <td>used to filter hwm count based on fromDate and toDate</td>
+                        <td><a href="webapi/count/hwm?fromDate=2017-01-01&toDate=2017-08-01">
+                            webapi/count/hwm?fromDate=2017-01-01&toDate=2017-08-01
                         </a>
                         </td>
                     </tr>

@@ -1,7 +1,9 @@
 package in.nic.hrocmms.resources;
 
 import in.nic.hrocmms.model.Count;
+import in.nic.hrocmms.model.CountSingleModule;
 import in.nic.hrocmms.service.CountService;
+import in.nic.hrocmms.service.CountSingleModuleService;
 import in.nic.hrocmms.service.UtilityService;
 
 import javax.print.DocFlavor;
@@ -20,7 +22,7 @@ import java.util.List;
 public class CountResource {
 
     private CountService countService = new CountService();
-
+    private CountSingleModuleService countSingleModuleService = new CountSingleModuleService();
 
 
     @GET
@@ -42,10 +44,79 @@ public class CountResource {
             return countService.getAllCount();
         }
 
-
-
     }
 
 
+    @Path("cto")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<CountSingleModule> getCountCto(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
+
+    ){
+
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+        if(isValidDateSupplied){
+            return countSingleModuleService.getAllCountDate("cto", fromDate, toDate);
+        }else{
+            return countSingleModuleService.getAllCount("cto");
+        }
+
+    }
+
+    @Path("hwm")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<CountSingleModule> getCountHwm(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
+
+    ){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+
+        if(isValidDateSupplied){
+            return countSingleModuleService.getAllCountDate("hwm", fromDate, toDate);
+        }else{
+            return countSingleModuleService.getAllCount("hwm");
+        }
+
+    }
+
+    @Path("bmw")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<CountSingleModule> getCountBmw(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
+
+    ){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+
+        if(isValidDateSupplied){
+            return countSingleModuleService.getAllCountDate("bmw", fromDate, toDate);
+        }else{
+            return countSingleModuleService.getAllCount("bmw");
+        }
+
+    }
+
+    @Path("all")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<CountSingleModule> getCountAll(
+            @QueryParam("fromDate") String fromDate,
+            @QueryParam("toDate") String toDate
+
+    ){
+        boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
+
+        if(isValidDateSupplied){
+            return countSingleModuleService.getAllCountDate("all", fromDate, toDate);
+        }else{
+            return countSingleModuleService.getAllCount("all");
+        }
+
+    }
 
 }
