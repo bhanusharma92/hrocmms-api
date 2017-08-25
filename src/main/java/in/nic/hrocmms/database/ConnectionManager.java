@@ -9,6 +9,10 @@ public class ConnectionManager {
     private static String driverName = "org.postgresql.Driver";
     private static Connection con;
 
+    // root url are used in hrocmmsResource class to call our hrocmms application actions
+    public static final String rootUrl = "http://localhost:8080/HSPCB/";
+    //public static final String rootUrl = "http://hrocmms.nic.in/OCMMS/";
+
     public static Connection getConnection() {
         try {
             Class.forName(driverName);
