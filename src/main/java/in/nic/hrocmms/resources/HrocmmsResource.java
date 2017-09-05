@@ -27,7 +27,9 @@ public class HrocmmsResource {
             @QueryParam("industry_telephone_no") String industry_telephone_no,
             @QueryParam("projectid") String caf_unique_no,
             @QueryParam("ip") String ip,
-            @QueryParam("cat_type") String cat_type
+            @QueryParam("cat_type") String cat_type,
+            @QueryParam("serviceid") String serviceid,
+            @QueryParam("projectserviceid") String projectserviceid
 
     ){
         if(name == null){
@@ -66,6 +68,12 @@ public class HrocmmsResource {
         if(cat_type == null){
             cat_type = "";
         }
+        if(serviceid == null){
+            serviceid = "";
+        }
+        if(projectserviceid == null){
+            projectserviceid = "";
+        }
         try{
 
             System.out.println("cat_type: " + cat_type);
@@ -73,6 +81,7 @@ public class HrocmmsResource {
             System.out.println("email_address: " + email_address);
             System.out.println("mobile_no: " + mobile_no);
             System.out.println("caf_unique_no: " + caf_unique_no);
+
             java.net.URI location = new java.net.URI( ConnectionManager.rootUrl + "industryRegMaster/doLoginApi?" +
                     "name=" + name + "&" +
                     "indDistrict=" + indDistrict  + "&" +
@@ -85,7 +94,9 @@ public class HrocmmsResource {
                     "industry_telephone_no=" + industry_telephone_no + "&" +
                     "caf_unique_no=" + caf_unique_no + "&" +
                     "ip=" + ip + "&" +
-                    "cat_type=" + cat_type
+                    "cat_type=" + cat_type + "&" +
+                    "serviceid=" + serviceid + "&" +
+                    "projectserviceid=" + projectserviceid
 
             );
             return Response.temporaryRedirect(location).build();
@@ -100,11 +111,14 @@ public class HrocmmsResource {
     @GET
     @Path("downloadCertificate")
     public Response downloadCertificate(
-            @QueryParam("applicationNo") String applicationNo
+            @QueryParam("projectid") String projectid,
+            @QueryParam("serviceid") String serviceid
     ){
         try{
             java.net.URI location = new java.net.URI(ConnectionManager.rootUrl + "industryRegMaster/downloadCertificateApi?" +
-                    "applicationNo=" + applicationNo
+                    "projectid=" + projectid + "&" +
+                    "serviceid=" + serviceid
+
             );
             return Response.temporaryRedirect(location).build();
         }catch(Exception e){

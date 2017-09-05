@@ -10,17 +10,18 @@ public class ConnectionManager {
     private static Connection con;
 
     // root url are used in hrocmmsResource class to call our hrocmms application actions
-    public static final String rootUrl = "http://localhost:8080/HSPCB/";
-    //public static final String rootUrl = "http://hrocmms.nic.in/OCMMS/";
+    // public static final String rootUrl = "http://localhost:8080/HSPCB/";
+    // public static final String rootUrl = "http://hrocmms.nic.in/OCMMS/";
+     public static final String rootUrl = "http://164.100.163.19/HSPCB/";
 
     public static Connection getConnection() {
         try {
             Class.forName(driverName);
             try {
-                con = DriverManager.getConnection( "jdbc:postgresql://localhost:5432/haryana_db",
-                        "postgres","1234");
-                /*con = DriverManager.getConnection("jdbc:postgresql://10.248.110.101:5432/OCMMS-HAR",
-                        "postgres","nic");*/
+                /*con = DriverManager.getConnection( "jdbc:postgresql://localhost:5432/haryana_db",
+                        "postgres","1234");*/
+                con = DriverManager.getConnection("jdbc:postgresql://10.248.110.101:5432/OCMMS-HAR",
+                        "postgres","nic");
             } catch (SQLException ex) {
                 // log an exception. fro example:
                 System.out.println("ex: " + ex);
