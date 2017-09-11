@@ -109,6 +109,10 @@ public class CountResource {
             @QueryParam("toDate") String toDate
 
     ){
+
+        fromDate = "2017-04-01";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        toDate = sdf.format(new Date());
         boolean isValidDateSupplied = UtilityService.validDateSuppliedCheck(fromDate, toDate);
 
         if(isValidDateSupplied){
