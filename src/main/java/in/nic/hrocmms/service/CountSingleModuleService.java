@@ -493,9 +493,9 @@ public class CountSingleModuleService {
                         ctoPendingBeyondTime, 0L, ctoPendingWithinTime, ctoGrantedBeyondTime+ctoGrantedWithinTime,
                         ctoPendingBeyondTime+ctoPendingWithinTime, ctoReceivedCount);
             }else if(moduleType.equals("hwm")){
-                countSingleModule = new CountSingleModule("cto", ctoGrantedBeyondTime, ctoGrantedWithinTime,
-                        ctoPendingBeyondTime, 0L, ctoPendingWithinTime, ctoGrantedBeyondTime+ctoGrantedWithinTime,
-                        ctoPendingBeyondTime+ctoPendingWithinTime, ctoReceivedCount);
+                countSingleModule = new CountSingleModule("hwm", hwmGrantedBeyondTime, hwmGrantedWithinTime,
+                        hwmPendingBeyondTime, 0L, hwmPendingWithinTime, hwmGrantedBeyondTime+hwmGrantedWithinTime,
+                        hwmPendingBeyondTime+hwmPendingWithinTime, hwmReceivedCount);
 
             }else if(moduleType.equals("bmw")){
                 countSingleModule = new CountSingleModule("bmw", bmwGrantedBeyondTime, bmwGrantedWithinTime,
@@ -506,9 +506,9 @@ public class CountSingleModuleService {
                         ctoPendingBeyondTime, 0L, ctoPendingWithinTime, ctoGrantedBeyondTime+ctoGrantedWithinTime,
                         ctoPendingBeyondTime+ctoPendingWithinTime, ctoReceivedCount);
                 countSingleModuleList.add(countSingleModule);
-                countSingleModule = new CountSingleModule("cto", ctoGrantedBeyondTime, ctoGrantedWithinTime,
-                        ctoPendingBeyondTime, 0L, ctoPendingWithinTime, ctoGrantedBeyondTime+ctoGrantedWithinTime,
-                        ctoPendingBeyondTime+ctoPendingWithinTime, ctoReceivedCount);
+                countSingleModule = new CountSingleModule("hwm", hwmGrantedBeyondTime, hwmGrantedWithinTime,
+                        hwmPendingBeyondTime, 0L, hwmPendingWithinTime, hwmGrantedBeyondTime+hwmGrantedWithinTime,
+                        hwmPendingBeyondTime+hwmPendingWithinTime, hwmReceivedCount);
                 countSingleModuleList.add(countSingleModule);
                 countSingleModule = new CountSingleModule("bmw", bmwGrantedBeyondTime, bmwGrantedWithinTime,
                         bmwPendingBeyondTime, 0L, bmwPendingWithinTime, bmwGrantedBeyondTime+bmwGrantedWithinTime,
