@@ -16,22 +16,40 @@ public class HrocmmsResource {
     @GET
     @Path("login")
     public Response login(
-            @QueryParam("uname") String name,
+            @QueryParam("investorname") String name, // in-use
             @QueryParam("indDistrict") String indDistrict,
-            @QueryParam("address") String address,
+            @QueryParam("address") String address, // in-use
             @QueryParam("firstName") String firstName,
             @QueryParam("lastName") String lastName,
-            @QueryParam("useremail") String email_address,
-            @QueryParam("mobile") String mobile_no,
+            @QueryParam("useremail") String email_address, // in-use
+            @QueryParam("mobile") String mobile_no, // in-use
             @QueryParam("industry_pin_code") String industry_pin_code,
             @QueryParam("industry_telephone_no") String industry_telephone_no,
-            @QueryParam("projectid") String caf_unique_no,
+            @QueryParam("projectid") String caf_unique_no, // in-use
             @QueryParam("ip") String ip,
             @QueryParam("cat_type") String cat_type,
-            @QueryParam("serviceid") String serviceid,
-            @QueryParam("projectserviceid") String projectserviceid
+            @QueryParam("serviceid") String serviceid, // in-use
+            @QueryParam("projectserviceid") String projectserviceid, // in-use
+            @QueryParam("businessentity") String businessentity, // in-use
+            @QueryParam("city") String city, // in-use
+            @QueryParam("state") String state // in-use
 
     ){
+        System.out.println("API--> before ifs");
+        System.out.println("cat_type: " + cat_type);
+        System.out.println("name: " + name); // in-use
+        System.out.println("address: " + address); // in-use
+        System.out.println("email_address: " + email_address); // in-use
+        System.out.println("mobile_no: " + mobile_no); // in-use
+        System.out.println("caf_unique_no: " + caf_unique_no); // in-use
+        System.out.println("serviceid: " + serviceid); // in-use
+        System.out.println("projectserviceid: " + projectserviceid); // in-use
+        System.out.println("businessentity: " + businessentity); // in-use
+        System.out.println("city: " + city); // in-use
+        System.out.println("state: " + state); // in-use
+
+
+
         if(name == null){
             name = "";
         }
@@ -74,15 +92,39 @@ public class HrocmmsResource {
         if(projectserviceid == null){
             projectserviceid = "";
         }
+        if(businessentity == null){
+            businessentity = "";
+        }
+        if(city == null){
+            city = "";
+        }
+        if(state == null){
+            state = "";
+        }
+
+        name = name.replace(" ", "!").replace("&", "*");
+        address = address.replace(" ", "!").replace("&", "*");
+        email_address = email_address.replace(" ", "!").replace("&", "*");
+        mobile_no = mobile_no.replace(" ", "!").replace("&", "*");
+        businessentity = businessentity.replace(" ", "!").replace("&", "*");
+        city = city.replace(" ", "!").replace("&", "*");
+        state = state.replace(" ", "!").replace("&", "*");
+
         try{
-
+            System.out.println("API--> After ifs");
             System.out.println("cat_type: " + cat_type);
-            System.out.println("name: " + name);
-            System.out.println("email_address: " + email_address);
-            System.out.println("mobile_no: " + mobile_no);
-            System.out.println("caf_unique_no: " + caf_unique_no);
+            System.out.println("name: " + name); // in-use
+            System.out.println("address: " + address); // in-use
+            System.out.println("email_address: " + email_address); // in-use
+            System.out.println("mobile_no: " + mobile_no); // in-use
+            System.out.println("caf_unique_no: " + caf_unique_no); // in-use
+            System.out.println("serviceid: " + serviceid); // in-use
+            System.out.println("projectserviceid: " + projectserviceid); // in-use
+            System.out.println("businessentity: " + businessentity); // in-use
+            System.out.println("city: " + city); // in-use
+            System.out.println("state: " + state); // in-use
 
-            java.net.URI location = new java.net.URI( ConnectionManager.rootUrl + "industryRegMaster/doLoginApi?" +
+            java.net.URI location = new java.net.URI(ConnectionManager.rootUrl + "industryRegMaster/doLoginApi?" +
                     "name=" + name + "&" +
                     "indDistrict=" + indDistrict  + "&" +
                     "address=" + address + "&" +
@@ -96,7 +138,10 @@ public class HrocmmsResource {
                     "ip=" + ip + "&" +
                     "cat_type=" + cat_type + "&" +
                     "serviceid=" + serviceid + "&" +
-                    "projectserviceid=" + projectserviceid
+                    "projectserviceid=" + projectserviceid + "&" +
+                    "businessentity=" + businessentity + "&" +
+                    "city=" + city + "&" +
+                    "state=" + state
 
             );
             return Response.temporaryRedirect(location).build();
