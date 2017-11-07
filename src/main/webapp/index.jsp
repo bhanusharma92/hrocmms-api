@@ -26,6 +26,81 @@
         hrocmms API documentation
     </h1>
 
+    <!-- ---------------------------------------------- EC ------------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>EC</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                GET
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return the application details for given application no.
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for CTE application details
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/checkCTEStatus">webapi/checkCTEStatus</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for CTO application details
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/checkCTOStatus">webapi/checkCTOStatus</a>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                URL Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Format</td>
+                        <td>Description</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>appNo</td>
+                        <td></td>
+                        <td>Application number</td>
+                        <td>
+                            1. &nbsp;<a href="webapi/checkCTEStatus?appNo=3913373">
+                            webapi/checkCTEStatus?appNo=3913373</a>
+                            <br>
+                            2. &nbsp;<a href="webapi/checkCTOStatus?appNo=4191612">
+                            webapi/checkCTOStatus?appNo=4191612</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------- Counts ends -------------------------------------------->
+
     <!------------------------------------------------ Inspection --------------------------------------------->
     <div class="row">
         <div class="row">

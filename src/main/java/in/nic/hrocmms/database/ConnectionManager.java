@@ -11,7 +11,7 @@ public class ConnectionManager {
 
     // root url are used in hrocmmsResource class to call our hrocmms application actions
     // public static final String rootUrl = "http://localhost:8080/HSPCB/";
-    public static final String rootUrl = "http://hrocmms.nic.in/OCMMS/";
+     public static final String rootUrl = "http://hrocmms.nic.in/OCMMS/";
     // public static final String rootUrl = "http://164.100.163.19/HSPCB/";
 
     public static Connection getConnection() {
