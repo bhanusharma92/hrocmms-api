@@ -32,7 +32,8 @@ public class HrocmmsResource {
             @QueryParam("projectserviceid") String projectserviceid, // in-use
             @QueryParam("businessentity") String businessentity, // in-use
             @QueryParam("city") String city, // in-use
-            @QueryParam("state") String state // in-use
+            @QueryParam("state") String state, // in-use
+            @QueryParam("cafpin") String cafpin // in-use - added on 21-11-2017 because nodal officer need it to track application instead of project id
 
     ){
         System.out.println("API--> before ifs");
@@ -47,6 +48,7 @@ public class HrocmmsResource {
         System.out.println("businessentity: " + businessentity); // in-use
         System.out.println("city: " + city); // in-use
         System.out.println("state: " + state); // in-use
+        System.out.println("cafpin: " + cafpin); // in-use
 
 
 
@@ -101,12 +103,23 @@ public class HrocmmsResource {
         if(state == null){
             state = "";
         }
+        if(cafpin == null){
+            cafpin = "";
+        }
 
         name = name.replace(" ", "!").replace("&", "*");
-        address = address.replace(" ", "!").replace("&", "*");
+        address = address.replaceAll("\\r?\\n", "");
+        address = address.replace(" ", "!").replace("&", "*").replace("<",
+                "").replace(">","").replace("#","").replace("%",
+                "").replace("{", "").replace("}", "").replace("|",
+                "").replace("\\","").replace("^","").replace("~",
+                "").replace("[","").replace("]","").replace("`",
+                "").replace(";","").replace("/","").replace("?",
+                "").replace(":","").replace("@","").replace("=",
+                "");
         email_address = email_address.replace(" ", "!").replace("&", "*");
         mobile_no = mobile_no.replace(" ", "!").replace("&", "*");
-        businessentity = businessentity.replace(" ", "!").replace("&", "*");
+        businessentity = businessentity.replace("\n", " ").replace(" ", "!").replace("&", "*");
         city = city.replace(" ", "!").replace("&", "*");
         state = state.replace(" ", "!").replace("&", "*");
 
@@ -123,6 +136,7 @@ public class HrocmmsResource {
             System.out.println("businessentity: " + businessentity); // in-use
             System.out.println("city: " + city); // in-use
             System.out.println("state: " + state); // in-use
+            System.out.println("cafpin: " + cafpin); // in-use
 
             java.net.URI location = new java.net.URI(ConnectionManager.rootUrl + "industryRegMaster/doLoginApi?" +
                     "name=" + name + "&" +
@@ -141,13 +155,15 @@ public class HrocmmsResource {
                     "projectserviceid=" + projectserviceid + "&" +
                     "businessentity=" + businessentity + "&" +
                     "city=" + city + "&" +
-                    "state=" + state
+                    "state=" + state + "&" +
+                    "cafpin=" + cafpin
 
             );
             return Response.temporaryRedirect(location).build();
         }catch (Exception ex){
-            System.out.println("Exception");
+            System.out.println("Exception:");
             System.out.println(ex);
+            System.out.println(ex.getCause());
             System.out.println("Exception ends");
         }
         return Response.noContent().build();
