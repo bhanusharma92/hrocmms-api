@@ -26,6 +26,65 @@
         hrocmms API documentation
     </h1>
 
+
+    <!-- ---------------------------------------------- Waste Tracking ------------------------------------------------->
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 text-center" style="background-color: lightgoldenrodyellow">
+                <h3>Waste Tracking</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro" >
+                Method
+            </div>
+            <div class="col-md-10">
+                GET
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Description
+            </div>
+            <div class="col-md-10">
+                Return the vehicle details
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                Link for vehicle number
+            </div>
+            <div class="col-md-10">
+                <a href="webapi/waste/{vehicle_no}">webapi/waste/{vehicle_no}</a>
+            </div>
+        </div>
+
+
+        <br>
+        <div class="row">
+            <div class="col-md-2" style="background-color: gainsboro">
+                URL Path Params
+            </div>
+            <div class="col-md-10">
+                <table class="table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Example</td>
+                    </tr>
+                    <tr>
+                        <td>vehicle_no</td>
+                        <td><a href="webapi/waste/1234">webapi/waste/1234</a></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------- Waste Tracking ends -------------------------------------------->
+
     <!-- ---------------------------------------------- EC ------------------------------------------------->
     <div class="row">
         <div class="row">
