@@ -116,7 +116,7 @@ public class HrocmmsResource {
                 "").replace("[","").replace("]","").replace("`",
                 "").replace(";","").replace("/","").replace("?",
                 "").replace(":","").replace("@","").replace("=",
-                "");
+                "").replace("\"", "");
         email_address = email_address.replace(" ", "!").replace("&", "*");
         mobile_no = mobile_no.replace(" ", "!").replace("&", "*");
         businessentity = businessentity.replace("\n", " ").replace(" ", "!").replace("&", "*");
