@@ -4,8 +4,13 @@ package in.nic.hrocmms.resources;
 import in.nic.hrocmms.database.ConnectionManager;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.client.*;
+import javax.ws.rs.core.Form;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.net.URLEncoder;
 
@@ -13,27 +18,27 @@ import java.net.URLEncoder;
 public class HrocmmsResource {
 
 
-    @GET
+    @POST
     @Path("login")
     public Response login(
-            @QueryParam("investorname") String name, // in-use
-            @QueryParam("indDistrict") String indDistrict,
-            @QueryParam("address") String address, // in-use
-            @QueryParam("firstName") String firstName,
-            @QueryParam("lastName") String lastName,
-            @QueryParam("useremail") String email_address, // in-use
-            @QueryParam("mobile") String mobile_no, // in-use
-            @QueryParam("industry_pin_code") String industry_pin_code,
-            @QueryParam("industry_telephone_no") String industry_telephone_no,
-            @QueryParam("projectid") String caf_unique_no, // in-use
-            @QueryParam("ip") String ip,
-            @QueryParam("cat_type") String cat_type,
-            @QueryParam("serviceid") String serviceid, // in-use
-            @QueryParam("projectserviceid") String projectserviceid, // in-use
-            @QueryParam("businessentity") String businessentity, // in-use
-            @QueryParam("city") String city, // in-use
-            @QueryParam("state") String state, // in-use
-            @QueryParam("cafpin") String cafpin // in-use - added on 21-11-2017 because nodal officer need it to track application instead of project id
+            @FormParam("investorname") String name, // in-use
+            @FormParam("indDistrict") String indDistrict,
+            @FormParam("address") String address, // in-use
+            @FormParam("firstName") String firstName,
+            @FormParam("lastName") String lastName,
+            @FormParam("useremail") String email_address, // in-use
+            @FormParam("mobile") String mobile_no, // in-use
+            @FormParam("industry_pin_code") String industry_pin_code,
+            @FormParam("industry_telephone_no") String industry_telephone_no,
+            @FormParam("projectid") String caf_unique_no, // in-use
+            @FormParam("ip") String ip,
+            @FormParam("cat_type") String cat_type,
+            @FormParam("serviceid") String serviceid, // in-use
+            @FormParam("projectserviceid") String projectserviceid, // in-use
+            @FormParam("businessentity") String businessentity, // in-use
+            @FormParam("city") String city, // in-use
+            @FormParam("state") String state, // in-use
+            @FormParam("cafpin") String cafpin // in-use - added on 21-11-2017 because nodal officer need it to track application instead of project id
 
     ){
         System.out.println("API--> before ifs");
@@ -159,7 +164,9 @@ public class HrocmmsResource {
                     "cafpin=" + cafpin
 
             );
-            return Response.temporaryRedirect(location).build();
+
+            return Response.seeOther(location).build();
+
         }catch (Exception ex){
             System.out.println("Exception:");
             System.out.println(ex);
@@ -169,11 +176,11 @@ public class HrocmmsResource {
         return Response.noContent().build();
     }
 
-    @GET
+    @POST
     @Path("downloadCertificate")
     public Response downloadCertificate(
-            @QueryParam("projectid") String projectid,
-            @QueryParam("serviceid") String serviceid
+            @FormParam("projectid") String projectid,
+            @FormParam("serviceid") String serviceid
     ){
         try{
             java.net.URI location = new java.net.URI(ConnectionManager.rootUrl + "industryRegMaster/downloadCertificateApi?" +
@@ -181,7 +188,7 @@ public class HrocmmsResource {
                     "serviceid=" + serviceid
 
             );
-            return Response.temporaryRedirect(location).build();
+            return Response.seeOther(location).build();
         }catch(Exception e){
             System.out.println("\nException in HrocmmsResource.java -> downloadCertificate");
             System.out.println("e: ");
